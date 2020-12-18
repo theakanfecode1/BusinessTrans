@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "273435575212",
+    "firebase_url": "https://businesstrans-de3e5.firebaseio.com",
+    "project_id": "businesstrans-de3e5",
+    "storage_bucket": "businesstrans-de3e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273435575212:android:96321cc5b41fcfc6ea3009",
+        "android_client_info": {
+          "package_name": "com.example.businesstrans"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "273435575212-8kp1v6e5a2u39iqj8akcq5jvslpnra33.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.businesstrans",
+            "certificate_hash": "629fcc54cedeaeeb0a2cdbada85d9c31c0e6b3a8"
+          }
+        },
+        {
+          "client_id": "273435575212-l3qfo2v0gkgj26usloftqvspvgrfkuum.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGjh0T4KBgO8EBBKToLVKa78Azk_dClQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "273435575212-l3qfo2v0gkgj26usloftqvspvgrfkuum.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

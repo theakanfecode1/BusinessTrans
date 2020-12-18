@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".TransactionDetailsFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/trans_white"
+        android:paddingBottom="15dp"
+        >
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/debtor_details_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:navigationIcon="@drawable/ic_back_icon_foreground"
+                app:title="Transaction">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="Debtor"
+                        android:textColor="@color/trans_white"
+                        android:textSize="22sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="20dp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Company/Individual name"
+            android:textColor="@color/trans_blue"
+            android:textSize="15sp"
+            android:inputType="textCapWords"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toTopOf="@id/debtor_details_company_name"
+            app:layout_constraintStart_toStartOf="@+id/debtor_details_company_name" />
+
+        <EditText
+            android:id="@+id/debtor_details_company_name"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/details_edittext_border"
+            android:gravity="center"
+            android:inputType="textCapWords"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="14sp"
+            android:textColor="@color/trans_black"
+            android:padding="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline9"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout4" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Type of transaction"
+            android:textColor="@color/trans_blue"
+            android:textSize="15sp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/debtor_details_type_of_transaction"
+            app:layout_constraintStart_toStartOf="@+id/debtor_details_type_of_transaction" />
+
+        <EditText
+            android:id="@+id/debtor_details_type_of_transaction"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/details_edittext_border"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="14sp"
+            android:textColor="@color/trans_black"
+            android:padding="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline9"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/debtor_details_company_name" />
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Amount indebted"
+            android:textColor="@color/trans_blue"
+            android:textSize="15sp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/debtor_details_amount_indebted"
+            app:layout_constraintStart_toStartOf="@+id/debtor_details_amount_indebted" />
+
+        <com.aldoapps.autoformatedittext.AutoFormatEditText
+            android:id="@+id/debtor_details_amount_indebted"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/details_edittext_border"
+            android:gravity="center"
+            app:isDecimal="true"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="14sp"
+            android:textColor="@color/trans_black"
+            android:padding="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline9"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/debtor_details_type_of_transaction" />
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Location of transaction"
+            android:textColor="@color/trans_blue"
+            android:textSize="15sp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/debtor_details_location_of_transaction"
+            app:layout_constraintStart_toStartOf="@+id/debtor_details_location_of_transaction" />
+
+        <EditText
+            android:id="@+id/debtor_details_location_of_transaction"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/details_edittext_border"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="14sp"
+            android:textColor="@color/trans_black"
+            android:padding="10dp"
+            android:inputType="textCapWords"
+            app:layout_constraintEnd_toStartOf="@+id/guideline9"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/debtor_details_amount_indebted" />
+
+        <Button
+            android:id="@+id/update_debtor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:textColor="@color/trans_white"
+            android:textSize="20sp"
+            android:layout_marginTop="25dp"
+            app:layout_constraintEnd_toEndOf="@+id/debtor_details_location_of_transaction"
+            app:layout_constraintStart_toStartOf="@+id/debtor_details_location_of_transaction"
+            app:layout_constraintTop_toBottomOf="@+id/debtor_details_location_of_transaction" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

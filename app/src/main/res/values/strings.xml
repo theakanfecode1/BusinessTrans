@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">BusinessTrans</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="event_tag">Event</string>
+    <string name="debtor_tag">Debtor</string>
+    <string name="transaction_tag">Transaction</string>
+    <string name="home_tag">home</string>
+    <string name="add_transaction">add_transaction</string>
+    <string name="add_debtor">add_debtor</string>
+    <string name="add_event">add_event</string>
+    <string name="transaction_details">transaction_details</string>
+    <string name="debtor_details">debtor_details</string>
+    <string name="event_details">event_details</string>
+    <string name="db_usernode">users</string>
+    <string name="db_transactionnode">transactions</string>
+    <string name="db_debtornode">debtors</string>
+    <string name="db_eventnode">events</string>
+    <string name="db_total_trans_node">events</string>
+    <string-array name="trans_status">
+        <item>Pending</item>
+        <item>Completed</item>
+        <item>Failed</item>
+    </string-array>
+</resources>
